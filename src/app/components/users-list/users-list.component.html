@@ -1,0 +1,9 @@
+<h1>Users List</h1>
+<ul class="users-buttons">
+  <!-- iterate through users list and passing user name to user button component -->
+  <app-user-button
+    *ngFor="let user of users"
+    name="{{ user.name }}"
+    id="{{ user.id }}"
+  ></app-user-button>
+</ul>

@@ -1,0 +1,72 @@
+.user-details {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+}
+.user-details .info-wrapper {
+  display: flex;
+  margin: 0.1rem;
+}
+.user-details .info-wrapper.posts-w {
+  margin-bottom: 0.5rem;
+}
+.user-details .info-wrapper .field-name,
+.user-details .info-wrapper .field-value .d-lev-2-field-name,
+.user-details .info-wrapper .field-value .d-lev-3-field-name {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  background-color: mediumslateblue;
+  margin-right: 1%;
+}
+.user-details .info-wrapper .field-value,
+.user-details .info-wrapper .field-value .d-lev-2-field-value,
+.user-details .info-wrapper .field-value .d-lev-3-field-value {
+  background-color: darkcyan;
+  color: white;
+  padding: 0.5rem 0;
+  width: 59%;
+}
+.user-details .info-wrapper .posts.field-name,
+.user-details .info-wrapper .posts.field-value:hover {
+  background-color: darkcyan;
+}
+.user-details .info-wrapper .posts.field-value {
+  background-color: mediumslateblue;
+}
+.user-details .info-wrapper .posts.field-value a {
+  color: white;
+  text-decoration: none;
+}
+.user-details .info-wrapper .posts.field-value a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.user-details .info-wrapper .field-value .d-lev-2,
+.user-details .info-wrapper .field-value .d-lev-3 {
+  display: flex;
+}
+.user-details .info-wrapper .field-value .d-lev-2:not(:last-child),
+.user-details .info-wrapper .field-value .d-lev-3:not(:last-child) {
+  margin-bottom: 0.1rem;
+}
+
+.user-details .info-wrapper .field-value .d-lev-2-field-name,
+.user-details .info-wrapper .field-value .d-lev-3-field-name {
+  background-color: ghostwhite;
+  color: darkcyan;
+}
+
+.user-details .info-wrapper .field-value .d-lev-3-field-name {
+  background-color: mediumslateblue;
+  color: white;
+}
+
+.user-details .info-wrapper .field-value .d-lev-3-field-value {
+  background-color: ghostwhite;
+  color: mediumslateblue;
+}

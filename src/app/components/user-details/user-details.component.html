@@ -1,0 +1,84 @@
+<h1 *ngIf="!user">No Such User</h1>
+<h1 *ngIf="user">{{ user?.name?.toUpperCase() }}'s Details</h1>
+<div *ngIf="user" class="user-details">
+  <div class="info-wrapper posts-w">
+    <div class="field-name posts">User Posts</div>
+    <div class="field-value posts">
+      <a routerLink="/user/{{ user?.id }}/posts"
+        >Visit {{ user?.name?.toLocaleUpperCase() }} 's Posts Page</a
+      >
+    </div>
+  </div>
+  <div class="info-wrapper">
+    <div class="field-name">User Name</div>
+    <div class="field-value">{{ user?.name }}</div>
+  </div>
+  <div class="info-wrapper">
+    <div class="field-name">User Email</div>
+    <div class="field-value">{{ user?.email }}</div>
+  </div>
+  <div class="info-wrapper">
+    <div class="field-name">User Address</div>
+    <div class="field-value">
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">Street</div>
+        <div class="d-lev-2-field-value">{{ user?.address?.street }}</div>
+      </div>
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">Suite</div>
+        <div class="d-lev-2-field-value">{{ user?.address?.suite }}</div>
+      </div>
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">City</div>
+        <div class="d-lev-2-field-value">{{ user?.address?.city }}</div>
+      </div>
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">Zipcode</div>
+        <div class="d-lev-2-field-value">{{ user?.address?.zipcode }}</div>
+      </div>
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">GEO</div>
+        <div class="d-lev-2-field-value">
+          <div class="d-lev-3">
+            <div class="d-lev-3-field-name">LAT</div>
+            <div class="d-lev-3-field-value">
+              {{ user?.address?.geo?.lat }}
+            </div>
+          </div>
+          <div class="d-lev-3">
+            <div class="d-lev-3-field-name">LNG</div>
+            <div class="d-lev-3-field-value">
+              {{ user?.address?.geo?.lng }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-wrapper">
+    <div class="field-name">User Phone</div>
+    <div class="field-value">{{ user?.phone }}</div>
+  </div>
+  <div class="info-wrapper">
+    <div class="field-name">User Website</div>
+    <div class="field-value">{{ user?.website }}</div>
+  </div>
+  <div class="info-wrapper">
+    <div class="field-name">User Company</div>
+    <div class="field-value">
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">Name</div>
+        <div class="d-lev-2-field-value">{{ user?.company?.name }}</div>
+      </div>
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">Catch Phrase</div>
+        <div class="d-lev-2-field-value">{{ user?.company?.catchPhrase }}</div>
+      </div>
+      <div class="d-lev-2">
+        <div class="d-lev-2-field-name">BS</div>
+        <div class="d-lev-2-field-value">{{ user?.company?.bs }}</div>
+      </div>
+    </div>
+  </div>
+</div>

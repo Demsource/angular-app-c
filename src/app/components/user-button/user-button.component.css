@@ -1,0 +1,18 @@
+li.user-name-btn {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: darkcyan;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  outline: none;
+  border: none;
+}
+li.user-name-btn:hover {
+  background-color: mediumslateblue;
+}
+
+li.user-name-btn a {
+  text-decoration: none;
+  color: white;
+}
